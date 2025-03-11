@@ -6,18 +6,17 @@ b=4
 summ=a+b
 print(f"summa {a}and {b}={a+b}")
 m=[3,5,8,10,15]
-n=int(input("n: "))
-for i in m:
-    if i==n:
+while True:
+    n=int(input("n: "))
+    if n in m:
+        print(f"number {n} founded")
         break
 
-    else:
-        print("dont founded")
-n=[7,9,13,18,21]
+n=input().split(",")
 for i in n:
-    if i%2==0:
-
+    if int(i)%2==0:
         print(i)
+        break
 n=input("n:")
 while True:
     if n=="1234":
