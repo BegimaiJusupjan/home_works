@@ -1,28 +1,16 @@
-n="Ali"
-m=25
-print(f"Hello {n},you are {m}")
-a=7
-b=4
-summ=a+b
-print(f"summa {a}and {b}={a+b}")
-m=[3,5,8,10,15]
-while True:
-    n=int(input("n: "))
-    if n in m:
-        print(f"number {n} founded")
-        break
-
-n=input().split(",")
-for i in n:
-    if int(i)%2==0:
-        print(i)
-        break
-n=input("n:")
-while True:
-    if n=="1234":
-        print("allowed")
-        break
-    else:
-        print("not allowed")
+n=[i for i in range(1,21) if i%2==0]
+print(*n)
+m=[i**2 for i in range(1,11)]
+print(*m)
+b=[5,12,7,18,3,10,8]
+res=(i for i in b if i>7)
+print(*res)
+#word=["apple","banana","cherry"]
+#print(word.upper()
+print("polojitelnoe" if int(input())>0 else "otrisatelnoe")
+print("jup" if int(input())%2==0 else "tak")
+a=[4.-1,7,-3,0,9]
+b=[i if i>=0 else 0 for i in a]
+print(*b)
 
 
